@@ -24,7 +24,7 @@ h3 {
 
 .group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-bottom: 100px;
 }
 
@@ -33,6 +33,32 @@ h3 {
   margin: 10px;
 }
 
+/* Groups and items (Desktop) */
+
+@media all and(min-width: 800px) {
+  section,
+  h1 {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
 .item-double {
   flex: 2;
+}
+
+/*Groups and items (Mobile) */
+
+body {
+  background-color: green;
+}
+
+/* This sapplies from 0px to 600px */
+@media all and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
 }
